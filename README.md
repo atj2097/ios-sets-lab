@@ -46,22 +46,15 @@ var emptySet: Set<Character> = []
 
 for letter in pangramSet.lowercased() {
 emptySet.insert(letter)
-emptySet.remove(" ")
+emptySet.remove(" ") 
+if (emptySet == alphabetSet) { 
+print(true)
+}
 }
 //print(emptySet.count)
 //print(alphabetSet.count)
 print(emptySet == alphabetSet)
 
-
-for letter in emptySet {
-for letters in alphabetSet {
-if emptySet.contains(letters) {
-letterCount += 1
-
-}
-}
-}
-print(letterCount)
 ```
 ## Question 3
 
